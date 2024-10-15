@@ -19,18 +19,8 @@ In addition to this, either enable [Developer Mode](https://docs.microsoft.com/e
 
 To clone using HTTPS:
 ```
-git clone https://github.com/FreeRTOS/FreeRTOS.git --recurse-submodules
+git clone https://github.com/subhashmagdum/FreeRTOS-Learning.git
 ```
-Using SSH:
-```
-git clone git@github.com:FreeRTOS/FreeRTOS.git --recurse-submodules
-```
-
-If you have downloaded the repo without using the `--recurse-submodules` argument, you need to run:
-```
-git submodule update --init --recursive
-```
-
 ## Repository structure
 This repository contains the FreeRTOS Kernel, a number of supplementary libraries including the LTS ones, and a comprehensive set of example projects.  Many libraries (including the FreeRTOS kernel) are included as Git submodules from their own Git repositories.
 
@@ -67,5 +57,9 @@ The `FreeRTOS/Test/CBMC/proofs` directory contains CBMC proofs.
 To learn more about CBMC and proofs specifically, review the training material [here](https://model-checking.github.io/cbmc-training).
 
 In order to run these proofs you will need to install CBMC and other tools by following the instructions [here](https://model-checking.github.io/cbmc-training/installation.html).
+
+************************************************************************************************************************************************************************************************************************
 # FreeRTOS-Learning
-# FreeRTOS-Learning
+
+git clone https://github.com/subhashmagdum/FreeRTOS-Learning.git
+
