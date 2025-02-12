@@ -1,3 +1,0 @@
-/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
-/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
-/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir
