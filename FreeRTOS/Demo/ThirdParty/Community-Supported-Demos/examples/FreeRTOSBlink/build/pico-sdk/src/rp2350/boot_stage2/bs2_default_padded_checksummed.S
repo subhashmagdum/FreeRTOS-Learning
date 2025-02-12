@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

@@ -1,4 +1,4 @@
-# Install script for directory: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src
+# Install script for directory: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/arm-none-eabi-objdump")
 endif()
 

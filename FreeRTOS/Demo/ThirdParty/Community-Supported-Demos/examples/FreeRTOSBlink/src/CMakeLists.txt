@@ -1,6 +1,5 @@
 add_executable(${NAME}
         main.cpp
-        
         Agent.cpp
         BlinkAgent.cpp
         )

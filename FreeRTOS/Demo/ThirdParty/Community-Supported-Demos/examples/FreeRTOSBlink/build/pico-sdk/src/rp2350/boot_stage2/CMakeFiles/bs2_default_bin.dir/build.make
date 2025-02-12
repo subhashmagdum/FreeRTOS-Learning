@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink
+CMAKE_SOURCE_DIR = /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build
+CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build
 
 # Utility rule file for bs2_default_bin.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/progress.
 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2350/boot_stage2/bs2_default.bin: pico-sdk/src/rp2350/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2 && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-objcopy -Obinary /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.elf /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.elf /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 bs2_default_bin: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin
 bs2_default_bin: pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
@@ -82,10 +82,10 @@ pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_defaul
 .PHONY : pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/boot_stage2 /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2 /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink /home/portalgun/D-Space/pico-sdk/src/rp2350/boot_stage2 /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2 /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 

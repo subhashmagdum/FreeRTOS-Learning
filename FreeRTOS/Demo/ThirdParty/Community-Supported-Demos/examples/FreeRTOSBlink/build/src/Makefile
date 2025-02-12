@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink
+CMAKE_SOURCE_DIR = /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build
+CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Com
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cpack --config ./CPackConfig.cmake
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cpack --config ./CPackSourceConfig.cmake /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CPackSourceConfig.cmake
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -87,8 +87,8 @@ package_source/fast: package_source
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,7 +98,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -117,49 +117,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src//CMakeFiles/progress.marks
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles 0
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src//CMakeFiles/progress.marks
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/BlinkLed50ms.dir/rule:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/BlinkLed50ms.dir/rule
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/BlinkLed50ms.dir/rule
 .PHONY : src/CMakeFiles/BlinkLed50ms.dir/rule
 
 # Convenience name for target.
@@ -192,23 +192,23 @@ BlinkLed50ms: src/CMakeFiles/BlinkLed50ms.dir/rule
 
 # fast build rule for target.
 BlinkLed50ms/fast:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/build
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/build
 .PHONY : BlinkLed50ms/fast
 
-Agent.obj: Agent.cpp.obj
-.PHONY : Agent.obj
+Agent.o: Agent.cpp.o
+.PHONY : Agent.o
 
 # target to build an object file
-Agent.cpp.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj
-.PHONY : Agent.cpp.obj
+Agent.cpp.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o
+.PHONY : Agent.cpp.o
 
 Agent.i: Agent.cpp.i
 .PHONY : Agent.i
 
 # target to preprocess a source file
 Agent.cpp.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.i
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.i
 .PHONY : Agent.cpp.i
 
 Agent.s: Agent.cpp.s
@@ -216,23 +216,23 @@ Agent.s: Agent.cpp.s
 
 # target to generate assembly for a file
 Agent.cpp.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.s
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.s
 .PHONY : Agent.cpp.s
 
-BlinkAgent.obj: BlinkAgent.cpp.obj
-.PHONY : BlinkAgent.obj
+BlinkAgent.o: BlinkAgent.cpp.o
+.PHONY : BlinkAgent.o
 
 # target to build an object file
-BlinkAgent.cpp.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj
-.PHONY : BlinkAgent.cpp.obj
+BlinkAgent.cpp.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o
+.PHONY : BlinkAgent.cpp.o
 
 BlinkAgent.i: BlinkAgent.cpp.i
 .PHONY : BlinkAgent.i
 
 # target to preprocess a source file
 BlinkAgent.cpp.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.i
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.i
 .PHONY : BlinkAgent.cpp.i
 
 BlinkAgent.s: BlinkAgent.cpp.s
@@ -240,2063 +240,2063 @@ BlinkAgent.s: BlinkAgent.cpp.s
 
 # target to generate assembly for a file
 BlinkAgent.cpp.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.s
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.s
 .PHONY : BlinkAgent.cpp.s
 
-__/port/FreeRTOS-Kernel/IdleMemory.obj: __/port/FreeRTOS-Kernel/IdleMemory.c.obj
-.PHONY : __/port/FreeRTOS-Kernel/IdleMemory.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.o
 
 # target to build an object file
-__/port/FreeRTOS-Kernel/IdleMemory.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj
-.PHONY : __/port/FreeRTOS-Kernel/IdleMemory.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o
 
-__/port/FreeRTOS-Kernel/IdleMemory.i: __/port/FreeRTOS-Kernel/IdleMemory.c.i
-.PHONY : __/port/FreeRTOS-Kernel/IdleMemory.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.i
 
 # target to preprocess a source file
-__/port/FreeRTOS-Kernel/IdleMemory.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.i
-.PHONY : __/port/FreeRTOS-Kernel/IdleMemory.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i
 
-__/port/FreeRTOS-Kernel/IdleMemory.s: __/port/FreeRTOS-Kernel/IdleMemory.c.s
-.PHONY : __/port/FreeRTOS-Kernel/IdleMemory.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.s
 
 # target to generate assembly for a file
-__/port/FreeRTOS-Kernel/IdleMemory.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.s
-.PHONY : __/port/FreeRTOS-Kernel/IdleMemory.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s
 
-__/port/FreeRTOS-Kernel/cppMemory.obj: __/port/FreeRTOS-Kernel/cppMemory.cpp.obj
-.PHONY : __/port/FreeRTOS-Kernel/cppMemory.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.o
 
 # target to build an object file
-__/port/FreeRTOS-Kernel/cppMemory.cpp.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj
-.PHONY : __/port/FreeRTOS-Kernel/cppMemory.cpp.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o
 
-__/port/FreeRTOS-Kernel/cppMemory.i: __/port/FreeRTOS-Kernel/cppMemory.cpp.i
-.PHONY : __/port/FreeRTOS-Kernel/cppMemory.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.i
 
 # target to preprocess a source file
-__/port/FreeRTOS-Kernel/cppMemory.cpp.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.i
-.PHONY : __/port/FreeRTOS-Kernel/cppMemory.cpp.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i
 
-__/port/FreeRTOS-Kernel/cppMemory.s: __/port/FreeRTOS-Kernel/cppMemory.cpp.s
-.PHONY : __/port/FreeRTOS-Kernel/cppMemory.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.s
 
 # target to generate assembly for a file
-__/port/FreeRTOS-Kernel/cppMemory.cpp.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.s
-.PHONY : __/port/FreeRTOS-Kernel/cppMemory.cpp.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.o: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.i: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.s: home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s
+.PHONY : home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.obj: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.i: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.s: home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.o: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.i: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.s: home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s
+home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.obj
+home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.o: home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.i
+home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.i: home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i
+home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.s
+home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.s: home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s
+home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.o: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.i: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.s: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.o: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.i: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.s: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.o: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.i: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.s: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.o: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.i: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.s: home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.o: home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.i: home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.s: home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.o: home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.i: home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.s: home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.o: home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.i: home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.s: home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.o: home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.i: home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.s: home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.o: home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.i: home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.s: home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s
+home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.obj
+home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.o: home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.obj
+home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.i: home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.i
 
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj
-
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.i
-
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.s
+home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.s: home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.obj
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s
-
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
-
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.i
 
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
-
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.i
-
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
 
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj
+# target to preprocess a source file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
 
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj
+# target to generate assembly for a file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s
-
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.obj
-
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.i
 
-# target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj
-
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.i
-
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.obj
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o
 
-# target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o
 
-# target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.obj
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o
+
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.obj
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o
+
+# target to build an object file
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.obj: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o
 
 # target to build an object file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.i: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i
 
 # target to preprocess a source file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.s: home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s
 
 # target to generate assembly for a file
-home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.obj: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o
 
 # target to build an object file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.i: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
 
 # target to preprocess a source file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.s: home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
 
 # target to generate assembly for a file
-home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s
-.PHONY : home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s
+home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-main.cpp.obj:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+main.cpp.o:
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o
+.PHONY : main.cpp.o
 
 main.i: main.cpp.i
 .PHONY : main.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/main.cpp.i
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -2304,7 +2304,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/main.cpp.s
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BlinkLed50ms.dir/build.make src/CMakeFiles/BlinkLed50ms.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -2322,268 +2322,268 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... BlinkLed50ms"
-	@echo "... Agent.obj"
+	@echo "... Agent.o"
 	@echo "... Agent.i"
 	@echo "... Agent.s"
-	@echo "... BlinkAgent.obj"
+	@echo "... BlinkAgent.o"
 	@echo "... BlinkAgent.i"
 	@echo "... BlinkAgent.s"
-	@echo "... __/port/FreeRTOS-Kernel/IdleMemory.obj"
-	@echo "... __/port/FreeRTOS-Kernel/IdleMemory.i"
-	@echo "... __/port/FreeRTOS-Kernel/IdleMemory.s"
-	@echo "... __/port/FreeRTOS-Kernel/cppMemory.obj"
-	@echo "... __/port/FreeRTOS-Kernel/cppMemory.i"
-	@echo "... __/port/FreeRTOS-Kernel/cppMemory.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.obj"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.i"
-	@echo "... home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.s"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.obj"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.i"
-	@echo "... home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.s"
-	@echo "... main.obj"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.s"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.o"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.i"
+	@echo "... home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
+	@echo "... home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 .PHONY : help
@@ -2597,6 +2597,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

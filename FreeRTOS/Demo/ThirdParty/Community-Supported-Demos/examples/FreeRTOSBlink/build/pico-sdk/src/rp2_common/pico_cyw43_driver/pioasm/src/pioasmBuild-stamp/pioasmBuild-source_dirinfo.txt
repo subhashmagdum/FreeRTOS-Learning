@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/portalgun/.pico-sdk/sdk/2.0.0/tools/pioasm
+source_dir=/home/portalgun/D-Space/pico-sdk/tools/pioasm
 work_dir=
 

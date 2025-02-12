@@ -14,21 +14,15 @@ application projects.  That way you will have the correct FreeRTOS source files
 included, and the correct include paths configured. Once a demo application is
 building and executing you can remove the demo application files, and start to
 add in your own application source files.  See the
-[FreeRTOS Kernel Quick Start Guide](https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/02-Quick-start-guide)
+[FreeRTOS Kernel Quick Start Guide](https://www.FreeRTOS.org/FreeRTOS-quick-start-guide.html)
 for detailed instructions and other useful links.
 
 Additionally, for FreeRTOS kernel feature information refer to the
-[Developer Documentation](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/00-Developer-docs),
-and [API Reference](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/00-TaskHandle).
+[Developer Documentation](https://www.FreeRTOS.org/features.html),
+and [API Reference](https://www.FreeRTOS.org/a00106.html).
 
 Also for contributing and creating a Pull Request please refer to
 [the instructions here](.github/CONTRIBUTING.md#contributing-via-pull-request).
-
-**FreeRTOS-Kernel V11.1.0
-[source code](https://github.com/FreeRTOS/FreeRTOS-Kernel/tree/V11.1.0) is part
-of the
-[FreeRTOS 202406.00 LTS](https://github.com/FreeRTOS/FreeRTOS-LTS/tree/202406-LTS)
-release.**
 
 ### Getting help
 

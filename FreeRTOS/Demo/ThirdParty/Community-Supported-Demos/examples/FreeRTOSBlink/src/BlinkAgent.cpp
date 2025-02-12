@@ -11,7 +11,7 @@
 
 
 //Blink Delay
-#define DELAY			50
+#define DELAY			200
 
 /***
  * Constructor

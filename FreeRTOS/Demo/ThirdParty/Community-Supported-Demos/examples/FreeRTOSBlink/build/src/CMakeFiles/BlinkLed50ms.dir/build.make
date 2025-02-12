@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink
+CMAKE_SOURCE_DIR = /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build
+CMAKE_BINARY_DIR = /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/BlinkLed50ms.dir/depend.make
@@ -69,1529 +69,1530 @@ include src/CMakeFiles/BlinkLed50ms.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/BlinkLed50ms.dir/flags.make
 
-src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp
-src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj -MF CMakeFiles/BlinkLed50ms.dir/main.cpp.obj.d -o CMakeFiles/BlinkLed50ms.dir/main.cpp.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp
+src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp
+src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o -MF CMakeFiles/BlinkLed50ms.dir/main.cpp.o.d -o CMakeFiles/BlinkLed50ms.dir/main.cpp.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp
 
 src/CMakeFiles/BlinkLed50ms.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlinkLed50ms.dir/main.cpp.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp > CMakeFiles/BlinkLed50ms.dir/main.cpp.i
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp > CMakeFiles/BlinkLed50ms.dir/main.cpp.i
 
 src/CMakeFiles/BlinkLed50ms.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlinkLed50ms.dir/main.cpp.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp -o CMakeFiles/BlinkLed50ms.dir/main.cpp.s
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/main.cpp -o CMakeFiles/BlinkLed50ms.dir/main.cpp.s
 
-src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp
-src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj -MF CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj.d -o CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp
+src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp
+src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o -MF CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o.d -o CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp
 
 src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlinkLed50ms.dir/Agent.cpp.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp > CMakeFiles/BlinkLed50ms.dir/Agent.cpp.i
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp > CMakeFiles/BlinkLed50ms.dir/Agent.cpp.i
 
 src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlinkLed50ms.dir/Agent.cpp.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp -o CMakeFiles/BlinkLed50ms.dir/Agent.cpp.s
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/Agent.cpp -o CMakeFiles/BlinkLed50ms.dir/Agent.cpp.s
 
-src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp
-src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj -MF CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj.d -o CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp
+src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp
+src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o -MF CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o.d -o CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp
 
 src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp > CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.i
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp > CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.i
 
 src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp -o CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj   -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj -c /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/IdleMemory.c
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj -MF CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj.d -o CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/IdleMemory.c
-
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/IdleMemory.c > CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.i
-
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/IdleMemory.c -o CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.s
-
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/flags.make
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj: /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/cppMemory.cpp
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj -MF CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj.d -o CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj -c /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/cppMemory.cpp
-
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.i"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/cppMemory.cpp > CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.i
-
-src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.s"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/port/FreeRTOS-Kernel/cppMemory.cpp -o CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.s
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src/BlinkAgent.cpp -o CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o: /home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o: /home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o -c /home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o   -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o: /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o -c /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: src/CMakeFiles/BlinkLed50ms.dir/flags.make
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: src/CMakeFiles/BlinkLed50ms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -c /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 # Object files for target BlinkLed50ms
 BlinkLed50ms_OBJECTS = \
-"CMakeFiles/BlinkLed50ms.dir/main.cpp.obj" \
-"CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj" \
-"CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj" \
-"CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj"
+"CMakeFiles/BlinkLed50ms.dir/main.cpp.o" \
+"CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o" \
+"CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o" \
+"CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
 
 # External object files for target BlinkLed50ms
 BlinkLed50ms_EXTERNAL_OBJECTS =
 
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/main.cpp.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdlib/stdlib.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_gpio/gpio.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2350/pico_platform/platform.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_platform_panic/panic.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/hardware_claim/claim.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync/sync.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/sem.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/lock_core.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/mutex.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_sync/critical_section.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/time.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_time/timeout_helper.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_timer/timer.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/datetime.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/pheap.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/common/pico_util/queue.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_uart/uart.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_clocks/clocks.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_pll/pll.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_vreg/vreg.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_watchdog/watchdog.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_ticks/ticks.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_xosc/xosc.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_divider/divider.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime/runtime.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_divider/divider_compiler.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_math.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_fma_dcp.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_sci_m33.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_double/double_conv_m33.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_math.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_float/float_conv_m33.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_malloc/malloc.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_atomic/atomic.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_printf/printf.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/crt0.S.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio/stdio.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_unique_id/unique_id.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_flash/flash.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/device/usbd_control.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/audio/audio_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/hid/hid_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/midi/midi_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/msc/msc_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/net/ncm_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/class/video/video_device.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/tusb.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/lib/tinyusb/src/common/tusb_fifo.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/croutine.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/event_groups.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/list.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/queue.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/stream_buffer.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/tasks.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Source/timers.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/hardware_exception/exception.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_multicore/multicore.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/IdleMemory.c.obj
-src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/__/port/FreeRTOS-Kernel/cppMemory.cpp.obj
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/main.cpp.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/Agent.cpp.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/BlinkAgent.cpp.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2350/pico_platform/platform.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/hardware_claim/claim.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/sem.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/lock_core.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/mutex.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_sync/critical_section.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/time.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_time/timeout_helper.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/datetime.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/pheap.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/common/pico_util/queue.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_float/float_conv_m33.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/tusb.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/MemMang/heap_4.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/croutine.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/event_groups.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/list.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/queue.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/stream_buffer.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/tasks.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Source/timers.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
 src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/build.make
+src/BlinkLed50ms.elf: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 src/BlinkLed50ms.elf: libfreertos_config.a
-src/BlinkLed50ms.elf: pico-sdk/src/rp2350/boot_stage2/bs2_default_padded_checksummed.S
-src/BlinkLed50ms.elf: /home/portalgun/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
+src/BlinkLed50ms.elf: /home/portalgun/D-Space/pico-sdk/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
 src/BlinkLed50ms.elf: src/CMakeFiles/BlinkLed50ms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking CXX executable BlinkLed50ms.elf"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BlinkLed50ms.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-objdump -h /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf > BlinkLed50ms.dis
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-objdump -d /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf >> BlinkLed50ms.dis
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/picotool/2.0.0/picotool/picotool coprodis --quiet BlinkLed50ms.dis BlinkLed50ms.dis || /home/portalgun/.pico-sdk/cmake/v3.28.6/bin/cmake -E echo "WARNING: Disassembly is not correct"
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-objcopy -Obinary /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf BlinkLed50ms.bin
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /home/portalgun/.pico-sdk/picotool/2.0.0/picotool/picotool uf2 convert --quiet /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf BlinkLed50ms.uf2 --family rp2350-arm-s --abs-block
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking CXX executable BlinkLed50ms.elf"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BlinkLed50ms.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-objdump -h /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf > BlinkLed50ms.dis
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-objdump -d /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf >> BlinkLed50ms.dis
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && ../_deps/picotool/picotool coprodis --quiet BlinkLed50ms.dis BlinkLed50ms.dis
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-objcopy -Oihex /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf BlinkLed50ms.hex
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && /usr/bin/arm-none-eabi-objcopy -Obinary /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf BlinkLed50ms.bin
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && ../_deps/picotool/picotool uf2 convert --quiet /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/BlinkLed50ms.elf BlinkLed50ms.uf2 --family rp2350-arm-s --abs-block
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/BlinkLed50ms.dir/build: src/BlinkLed50ms.elf
 .PHONY : src/CMakeFiles/BlinkLed50ms.dir/build
 
 src/CMakeFiles/BlinkLed50ms.dir/clean:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && $(CMAKE_COMMAND) -P CMakeFiles/BlinkLed50ms.dir/cmake_clean.cmake
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src && $(CMAKE_COMMAND) -P CMakeFiles/BlinkLed50ms.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/BlinkLed50ms.dir/clean
 
 src/CMakeFiles/BlinkLed50ms.dir/depend:
-	cd /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src /home/portalgun/D-Space/FreeRTOS/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/CMakeFiles/BlinkLed50ms.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/src /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src /home/portalgun/D-Space/FreeRTOS-Learning/FreeRTOS/Demo/ThirdParty/Community-Supported-Demos/examples/FreeRTOSBlink/build/src/CMakeFiles/BlinkLed50ms.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/BlinkLed50ms.dir/depend
 

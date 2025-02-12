@@ -30,7 +30,7 @@
  * This is a simple main that will start the FreeRTOS-Kernel and run a periodic task
  * that only delays if compiled with the template port, this project will do nothing.
  * For more information on getting started please look here:
- * https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/02-Quick-start-guide
+ * https://freertos.org/FreeRTOS-quick-start-guide.html
  */
 
 /* FreeRTOS includes. */
